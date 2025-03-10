@@ -1,0 +1,132 @@
+<!-- 
+Online HTML, CSS and JavaScript editor to run code online.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    h1{
+      text-align: center;
+    }
+  body {
+  margin: 20px;
+  }
+  #div1,#div2,#div3,#div4,#div5{
+   background-color: rgb(246, 237, 227);
+  height:194px;
+  width:330px;
+  margin:5px 20px 5px 20px;
+  display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  button {
+    background-color: blue;
+    border-radius: 5px;
+    height: 25px; /* Increased height for better balance */
+    width: 75px;  /* Wider button for longer text */
+    color: white;
+    border: 1px solid white;
+    font-size: 14px; /* Adjusted font size */
+    padding: 5px 10px; /* Added padding for better spacing */
+    cursor: pointer;  /* Indicates the button is clickable */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+button:hover {
+    background-color: darkblue; /* Darker shade on hover */
+}
+
+  .description{
+   width: 150px;
+   height: 150px;
+   
+  }
+  #main{
+  display:flex;
+  flex-wrap:wrap;
+  }
+  #img1{
+  width: 140px;
+  margin-top:2px;
+  }
+  #img2{
+    margin-top:30px;
+    height: 130px;
+  }
+  #img3{
+  width: 170px;
+  margin-right:10px;
+  margin-top:20px;
+  }
+  #img4{
+    margin-top:10px;
+width:120px;
+  }
+  #img5{
+    margin-top:30px;
+    width:170px;
+  }
+  
+  </style>
+  <title>Browser</title>
+</head>
+
+<body>
+<hr>
+ <h1>Projects</h1>
+ <hr>
+   <div id="main">
+   <div id="div1">
+    <div class="description"><h2>1.Calculator</h2>
+       A standard calculator that is able to do basic operations and support decimals.</div>
+    <div><button id="btn1">Details</button></div>
+    <div><img id="img1" src="images/calculator.png"></div>
+  </div>
+   <div id="div2"><div class="description"><h2>2.Etch-a-sketch</h2>
+    A drawing pad for drawing basic objects.</div>
+ <div><button id="btn2">Details</button></div>
+ <div><img id="img2" src="images/etch-a-sketch.jpg"></div>
+</div>
+   <div id="div3">
+    <div class="description"><h2>3.Rock-papers-scissors</h2>
+      2player game</div>
+   <div><button id="btn3">Details</button></div>
+   <div><img id="img3" src="images/rock-papers-scissors.png"></div>
+   </div>
+   <div id="div4">
+    <div class="description"><h2>4.Landing page</h2>
+      Basic homepage of a website with sign in button.</div>
+   <div><button id="btn4">Details</button></div>
+   <div><img id="img4" src="images/landing-page.png"></div>
+   </div>
+   <div id="div5">
+    <div class="description"><h2>5.Recipes</h2>
+      A basic recipes website with muliple pages and a lot of dishes.</div>
+   <div><button id="btn5">Details</button></div>
+   <div><img id="img5" src="images/recipe.jpg"></div>
+   </div>
+   </div>
+  <script>
+    document.getElementById("btn1").onclick = function() {
+    window.location.href = "projects/Calculator_project.html";
+    };
+    document.getElementById("btn2").onclick = function() {
+    window.location.href = "projects/Etch-a-sketch_project.html";
+    };
+    document.getElementById("btn3").onclick = function() {
+    window.location.href = "projects/Rock-papers-scissors.html";
+    };
+    document.getElementById("btn4").onclick = function() {
+    window.location.href = "projects/Landing-page_project.html";
+    };
+    document.getElementById("btn5").onclick = function() {
+    window.location.href = "projects/Recipes_project.html";
+    };
+  </script>
+</body>
+
+</html>
