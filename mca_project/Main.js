@@ -6,7 +6,7 @@ document.getElementById("portfolio").onclick = function() {
     window.location.href = "Portfolio.html";
 };
 document.getElementById("contact").onclick = function() {
-    window.location.href = "contact.html";
+    window.location.href = "Contact.html";
 };
 function updateTime() {
     const now = new Date();
